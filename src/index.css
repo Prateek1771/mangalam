@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face { font-family: 'Inter'; font-weight: 300; src: url('/fonts/font_inter_300.ttf') format('truetype'); }
+@font-face { font-family: 'Inter'; font-weight: 400; src: url('/fonts/font_inter_400.ttf') format('truetype'); }
+@font-face { font-family: 'Inter'; font-weight: 500; src: url('/fonts/font_inter_500.ttf') format('truetype'); }
+@font-face { font-family: 'Inter'; font-weight: 600; src: url('/fonts/font_inter_600.ttf') format('truetype'); }
+@font-face { font-family: 'Inter'; font-weight: 700; src: url('/fonts/font_inter_700.ttf') format('truetype'); }
+@font-face { font-family: 'Urbanist'; font-weight: 400; src: url('/fonts/font_urbanist_400.ttf') format('truetype'); }
+@font-face { font-family: 'Urbanist'; font-weight: 500; src: url('/fonts/font_urbanist_500.ttf') format('truetype'); }
+@font-face { font-family: 'Urbanist'; font-weight: 600; src: url('/fonts/font_urbanist_600.ttf') format('truetype'); }
+@font-face { font-family: 'Urbanist'; font-weight: 700; src: url('/fonts/font_urbanist_700.ttf') format('truetype'); }
+@font-face { font-family: 'Urbanist'; font-weight: 800; src: url('/fonts/font_urbanist_800.ttf') format('truetype'); }
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 215 20.2% 65.1%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #ffffff;
+    color: #0D0D0D;
+    overflow-x: hidden;
+  }
+  #root { 
+    width: 100%; 
+    overflow-x: hidden;
+  }
+}
+
+html { scroll-behavior: smooth; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #2B3990; border-radius: 3px; }
